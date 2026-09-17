@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/DEEPIKA-217M/github-actions-basic.git'
-            }
-        }
-
         stage('Check Python') {
             steps {
                 bat 'python --version'
